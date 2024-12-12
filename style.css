@@ -194,4 +194,8 @@ i:hover {
   .container {
     width: 400px;
   }
+  .card_white {
+    width: 100%;
+    margin: 0px 0px;
+  }
 }
