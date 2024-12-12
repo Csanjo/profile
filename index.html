@@ -6,37 +6,62 @@
   <title>My Profile</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
   <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
-  <div class="container text-center">
-    <div class="card card_white">
-      <h1>Christian Sanjo</h1>
-      <img src="images/Luigi_by_Shigehisa_Nakaue.png" class ="img_circle" alt="Luigi">
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Christian Sanjo</a>
+      </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#section1">About me</a></li>
+          <li><a href="#section2">Projects</a></li>
+          <li><a href="#section3">Contact</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="card card_white">
+  </div>
+</nav>
+  <div class="container text-center">
+    <div class="card intro">
+      <h1>Christian Sanjo</h1>
+      <img src="images/Profile_pic.jpg" class ="img-circle" alt="Luigi">
+    </div>
+    <div class="card card_white" id="section1">
       <h2>About me</h2>
-      <p>Hey there! I’m Luigi, Mario’s little brother. I might not be as famous as he is, but I’ve got my own adventures! I’m a bit taller and leaner, with my signature green hat and overalls. I like to think of myself as the ‘gentle giant’—a little shy, but always ready to lend a hand when it counts.</p>
-      <p>Whether I'm exploring haunted mansions or racing on the track, I try to keep my cool, even when things get spooky! I might not always have the spotlight, but I’ve got a big heart and a knack for teamwork. Plus, I can jump pretty high! So, if you ever need someone to join the adventure, I’m your guy!</p>
-      <a href="#" target="_blank" class="link-btn">Click here for more!</a>
+      <p>I am currently living in Tokyo, Japan and have been studying coding for over a year now. I have finished the Le Wagon Web Development course and ready to start my life as a Full stack Engineer.</p>
+   </div>
+    <div class="card card_white" id="section2">
+      <h2>Projects</h2>
+      <p>I am currently living in Tokyo, Japan and have been studying coding for over a year now. I have finished the Le Wagon Web Development course and ready to start my life as a Full stack Engineer.</p>
    </div>
    <div class="card card_white">
-      <h3>Follow me</h3>
       <ul class="list-inline">
         <li>
-          <a href ="https://x.com/daily_luigi" target="_blank">
-            <i class="fa-brands fa-twitter"></i>
+          <a href="mailto:example@example.com"><i class="fa-solid fa-envelope"></i></a>
+
           </a>
         </li>
         <li>
-          <a href="https://www.instagram.com/luigi_nintendo/" target="_blank">
-            <i class="fa-brands fa-instagram"></i>
+          <a href="https://www.github.com/csanjo" target="_blank">
+            <i class="fa-brands fa-github"></i>
           </a>
         </li>
         <li>
-          <a href="https://en.wikipedia.org/wiki/Luigi%27s_Mansion" target="_blank">
-            <i class="fa-solid fa-gamepad"></i>
+          <a href="https://www.linkedin.com/in/csanjo" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
           </a>
         </li>
       </ul>
