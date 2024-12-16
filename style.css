@@ -103,11 +103,12 @@ i:hover {
 }
 .card-product {
   overflow: hidden;
-  height: 120px;
+  height: 160px;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
+  position: relative;
 
   margin: 16px;
 }
@@ -115,7 +116,7 @@ i:hover {
 .card-product img {
   height: 100%;
   width: 120px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .card-product h2 {
@@ -132,13 +133,20 @@ i:hover {
   margin-top: 8px;
 }
 
-.card-product-infos {
-  position: relative;
+.tech {
+  position:absolute;
+  bottom: 5px;
+}
+
+#tech_icons {
+  width:24px;
+  height: 100%;
+  opacity: .3;
 }
 
 #link {
   position:absolute;
-  bottom: 10px;
+  top: 10px;
   right: 10px;
   opacity: 0;
   color: rgb(140, 140, 140);
