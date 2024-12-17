@@ -1,15 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tiny5&display=swap');
 
+.intro {
+  background: white;
+  padding: 30px;
+  border: 1px solid lightgrey;
+  margin: 25px 80px;
+  margin-top: 120px;
+
+
+  box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+
+}
+
 body {
-  background-color: rgb(251, 208, 0);
-  color: rgb(20, 20, 20);
-  display: block;
+  background-color: rgb(150, 150, 150);
+
   margin: 8px;
 }
 
 h1, h2, h3 {
   color: 	#3b3b3b;
-  font-family: "Tiny5", sans-serif;
+  font-family: sans-serif;
+  font-family: sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 40px;
@@ -31,21 +43,26 @@ p{
 .container {
   width: 500px;
   margin: 0 auto;
+  padding: 0px 50px;
 }
 .card_white {
   background: white;
   padding: 30px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+
   border: 1px solid lightgrey;
-  margin: 25px;
+  margin: 25px 80px;
 }
 
 .img-circle {
-  box-shadow: rgb(83, 83, 83) 10px 5px 5px;
   border-radius: 50%;
-  border-width: 0.5px;
-  border-style: solid;
-  border-color: rgb(20, 20, 20);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  border: white 1px solid;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  border: white 1px solid;
   border-image: initial;
+  width: 30%;
+
 }
 
 .text-center {
@@ -79,14 +96,112 @@ p{
 }
 
 i {
-  color: rgb(67, 176, 71);
+  color: rgb(140, 140, 140);
   opacity: 0.2;
 }
 
 i:hover {
-  color: rgb(67, 176, 71);
+  color: rgb(140, 140, 140);
   opacity: 1;
 }
+.card-product {
+  overflow: hidden;
+  height: 160px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  margin: 16px;
+}
+
+.card-product img {
+  height: 100%;
+  width: 120px;
+  object-fit: contain;
+}
+
+.card-product h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-product p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.tech {
+  position:absolute;
+  bottom: 5px;
+}
+
+#tech_icons {
+  width:24px;
+  height: 100%;
+  opacity: .3;
+}
+
+#link {
+  position:absolute;
+  top: 10px;
+  right: 10px;
+  opacity: 0;
+  color: rgb(140, 140, 140);
+  transition: opacity 0.3s ease;
+}
+
+.card-product:hover #link {
+  opacity: 1; /* Show the link when card is hovered */
+}
+
+.card-product .card-product-infos {
+  padding: 16px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+@media (min-width: 100px) and (max-width: 575px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 576px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
@@ -105,6 +220,14 @@ i:hover {
 @media (max-width: 540px) {
   /* For a screen < 540px, this CSS will be read */
   .container {
-    width: 300px;
+    width: 400px;
+  }
+  .card_white {
+    width: 100%;
+    margin: 20px 0px;
+  }
+  .intro {
+    width: 100%;
+    margin: 20px 0px;
   }
 }

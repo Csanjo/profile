@@ -3,40 +3,125 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Profile</title>
+  <title>Christian Sanjo</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
   <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
 
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
-  <div class="container text-center">
-    <div class="card card_white">
-      <h1>It's as me, <span style="color: #43B047">Luigi</span>!</h1>
-      <img src="images/Luigi_by_Shigehisa_Nakaue.png" class ="img_circle" alt="Luigi">
+<body data-spy="scroll" data-target=".navbar" data-offset="50" style="background-color: #454851;">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Christian Sanjo</a>
+      </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#section1">About me</a></li>
+          <li><a href="#section2">Projects</a></li>
+          <li><a href="#section3">Contact</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="card card_white">
+  </div>
+</nav>
+  <div class="container text-center">
+    <div class="intro">
+      <h1>Christian Sanjo</h1>
+      <img src="images/Updated_pic.jpg" class ="img-circle" alt="Luigi">
+    </div>
+    <div class="card_white" id="section1">
       <h2>About me</h2>
-      <p>Hey there! I’m Luigi, Mario’s little brother. I might not be as famous as he is, but I’ve got my own adventures! I’m a bit taller and leaner, with my signature green hat and overalls. I like to think of myself as the ‘gentle giant’—a little shy, but always ready to lend a hand when it counts.</p>
-      <p>Whether I'm exploring haunted mansions or racing on the track, I try to keep my cool, even when things get spooky! I might not always have the spotlight, but I’ve got a big heart and a knack for teamwork. Plus, I can jump pretty high! So, if you ever need someone to join the adventure, I’m your guy!</p>
-      <a href="#" target="_blank" class="link-btn">Click here for more!</a>
+      <p>I live in Japan 🇯🇵 and recently completed a web programming course 💻, diving into the exciting world of coding and development. When I’m not building websites or learning new tech skills, you’ll likely find me exploring the vibrant food scene 🍣🍜, trying out new and unique dishes.
+
+        In my downtime, I’m passionate about board games 🎲—whether it’s a strategic challenge or a light-hearted game night with friends, it’s my favorite way to unwind and connect.
+
+        I’m always eager to learn, create, and share experiences. Let’s connect! 🤝</p>
    </div>
-   <div class="card card_white">
-      <h3>Follow me</h3>
+    <div class="card card_white" id="section2">
+      <h2>Projects</h2>
+      <div class="cards">
+      <div class="card-product">
+        <img src="images/biteoff.jpeg" />
+        <div class="card-product-infos">
+          <h2>Biteoff</h2>
+          <p>An app that helps you find local deals in your area </p>
+          <a href="http://www.biteoff.net" target="_blank"><i class="fa-solid fa-right-to-bracket" id="link"></i></a>
+          <div class="tech">
+            <img src="https://api.iconify.design/devicon-plain:rails-wordmark.svg" alt="Rails Icon" id="tech_icons"/>
+            <img src="https://api.iconify.design/devicon-plain:heroku.svg " alt="Rails Icon" id="tech_icons"/>
+            <img src="https://api.iconify.design/simple-icons:postgresql.svg " alt="Rails Icon" id="tech_icons"/>
+            <img src="https://api.iconify.design/ci:javascript.svg" alt="Rails Icon" id="tech_icons"/>
+          </div>
+        </div>
+      </div>
+      <div class="card-product">
+        <img src="images/Boardgame.jpeg" />
+        <div class="card-product-infos">
+          <h2>Boardgame Mania</h2>
+          <p>An app that allows you to rent or rent out places</p>
+          <a href="https://boardgame-mania.onrender.com/" target="_blank"><i class="fa-solid fa-right-to-bracket" id="link"></i></a>
+          <div class="tech">
+            <img src="https://api.iconify.design/devicon-plain:rails-wordmark.svg" alt="Rails Icon" id="tech_icons"/>
+            <img src="https://api.iconify.design/devicon-plain:heroku.svg" alt="Rails Icon" id="tech_icons"/>
+            <img src="https://api.iconify.design/simple-icons:postgresql.svg" alt="Rails Icon" id="tech_icons"/>
+            <img src="https://api.iconify.design/ci:javascript.svg" alt="Rails Icon" id="tech_icons"/>
+          </div>
+        </div>
+      </div>
+      <div class="card-product">
+        <img src="images/landing.jpeg" />
+        <div class="card-product-infos">
+          <h2>Landing Page</h2>
+          <p>Created a landing page for coding classes </p>
+          <a href="http://christiansanjo.me/landing/" target="_blank"><i class="fa-solid fa-right-to-bracket" id="link"></i></a>
+          <div class="tech">
+          <img src="https://api.iconify.design/flowbite:html-solid.svg" alt="Rails Icon" id="tech_icons"/>
+          <img src="https://api.iconify.design/flowbite:css-solid.svg" alt="Rails Icon" id="tech_icons"/>
+        </div>
+        </div>
+      </div>
+      <div class="card-product">
+        <img src="images/race.jpeg" />
+        <div class="card-product-infos">
+          <h2>Race</h2>
+          <p> Simple racing using JavaScript</p>
+          <div class="tech">
+            <img src="https://api.iconify.design/ci:javascript.svg" alt="Rails Icon" id="tech_icons"/>
+            <img src="https://api.iconify.design/flowbite:html-solid.svg" alt="Rails Icon" id="tech_icons"/>
+            <img src="https://api.iconify.design/flowbite:css-solid.svg" alt="Rails Icon" id="tech_icons"/>
+          </div>
+          <a href="http://christiansanjo.me/wagon_race/" target="_blank"><i class="fa-solid fa-right-to-bracket" id="link"></i></a>
+        </div>
+      </div>
+    </div>
+   </div>
+   <div class="card_white" id="section3">
       <ul class="list-inline">
         <li>
-          <a href ="https://x.com/daily_luigi" target="_blank">
-            <i class="fa-brands fa-twitter"></i>
+          <a href="mailto:christiansanjojp@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+
           </a>
         </li>
         <li>
-          <a href="https://www.instagram.com/luigi_nintendo/" target="_blank">
-            <i class="fa-brands fa-instagram"></i>
+          <a href="https://www.github.com/csanjo" target="_blank">
+            <i class="fa-brands fa-github"></i>
           </a>
         </li>
         <li>
-          <a href="https://en.wikipedia.org/wiki/Luigi%27s_Mansion" target="_blank">
-            <i class="fa-solid fa-gamepad"></i>
+          <a href="https://www.linkedin.com/in/csanjo" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
           </a>
         </li>
       </ul>
