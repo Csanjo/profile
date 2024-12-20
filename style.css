@@ -99,6 +99,7 @@ p{
 i {
   color: rgb(140, 140, 140);
   opacity: 0.2;
+
 }
 
 i:hover {
@@ -148,19 +149,6 @@ i:hover {
   opacity: .3;
 }
 
-#link {
-  position:absolute;
-  top: 10px;
-  right: 10px;
-  opacity: 0;
-  color: rgb(140, 140, 140);
-  transition: opacity 0.3s ease;
-}
-
-.card-product:hover #link {
-  opacity: 1; /* Show the link when card is hovered */
-}
-
 .card-product .card-product-infos {
   padding: 16px;
 }
@@ -183,7 +171,22 @@ i:hover {
   background-color: white;
   box-shadow: 0 8px 16px rgba(0,0,0,0.3);
   margin: 16px;
+  position:relative;
 }
+
+.link {
+  position:absolute;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0;
+  color: rgb(140, 140, 140);
+  transition: opacity 0.3s ease;
+}
+
+.card-hello:hover .link {
+  opacity: 1; /* Show the link when card is hovered */
+}
+
 
 .card-hello img {
   /*fixed*/
@@ -208,8 +211,13 @@ i:hover {
   margin: 16px 0;
 }
 
+@media (max-width: 768px) { /* Adjust width as needed */
+  .link {
+    opacity: 1; /* Always visible */
+  }
+}
 /* De-activate card hover style for tablet/mobiles */
-@media (min-width: 1100px) {
+@media (min-width: 768px) {
   .card-hello img:hover {
     /*customizable*/
     height: 70%;
