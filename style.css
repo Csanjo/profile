@@ -13,9 +13,14 @@
 
 }
 
+
 body {
   background-color: rgb(150, 150, 150);
-
+  background-image: url('images/background-6360865_1280.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 280vh;
   margin: 8px;
 }
 
@@ -160,12 +165,10 @@ i:hover {
   grid-gap: 16px;
 }
 
-/*Card Hello*/
+
 .card-hello {
-  /*fixed*/
   display: flex;
   flex-direction: column;
-  /*customizable*/
   height: 260px;
   width: 100%;
   max-width: 250px;
