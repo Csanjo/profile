@@ -16,11 +16,11 @@
 
 body {
   background-color: rgb(150, 150, 150);
-  background-image: url('images/background-6360865_1280.png');
+  background-image: url('/images/background-6360865_1280.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 280vh;
+  height: 200vh;
   margin: 8px;
 }
 
