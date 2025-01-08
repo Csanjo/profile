@@ -225,13 +225,13 @@ i:hover {
 @media (min-width: 768px) {
   .card-hello img:hover {
     /*customizable*/
-    height: 65%;
+    height: 50%;
   }
 }
 
 .card-hello img.tapped {
   /*customizable*/
-  height: 65%;
+  height: 50%;
 }
 @media (min-width: 100px) and (max-width: 575px) {
   .cards {
