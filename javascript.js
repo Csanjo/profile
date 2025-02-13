@@ -42,7 +42,7 @@ let isEnglish = true;
                 $('#about').text("About me")
                 $('#paragraph').text("I live in Japan and recently completed a web programming course 💻, diving into the exciting world of coding and development. When I’m not building websites or learning new tech skills, you’ll likely find me exploring the vibrant food scene 🍣🍜, trying out new and unique dishes. In my downtime, I’m passionate about board games 🎲—whether it’s a strategic challenge or a light-hearted game night with friends, it’s my favorite way to unwind and connect. I’m always eager to learn, create, and share experiences. Let’s connect! 🤝");
                 $('#projects').text("Projects")
-                $('#video').text("video")
+                $('#video').text("Video")
             } else {
                 $('#heading').text("三條 クリスチアン");
                 $('#about').text("自己紹介")
