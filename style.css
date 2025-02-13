@@ -67,7 +67,7 @@ p{
   margin: 25px 80px;
 }
 #section2 {
-  padding: 30px 40px;
+
 }
 .img-circle {
   border-radius: 50%;
@@ -195,15 +195,13 @@ i:hover {
 }
 
 .card-hello:hover .link {
-  opacity: 1; /* Show the link when card is hovered */
+  opacity: 1;
 }
 
 
 .card-hello img {
-  /*fixed*/
   width: 100%;
   object-fit: cover;
-  /*customizable*/
   object-position: 50% 50%;
   border-radius: 16px 16px 0 0;
   height: 30%;
@@ -211,32 +209,27 @@ i:hover {
 }
 
 .card-hello-info {
-  /*fixed*/
   overflow: hidden;
-  /*customizable*/
   padding: 16px;
 }
 
 .card-hello-info h2 {
-  /*customizable*/
   margin: 16px 0;
 }
 
-@media (max-width: 768px) { /* Adjust width as needed */
+@media (max-width: 768px) {
   .link {
-    opacity: 1; /* Always visible */
+    opacity: 1;
   }
 }
-/* De-activate card hover style for tablet/mobiles */
+
 @media (min-width: 768px) {
   .card-hello img:hover {
-    /*customizable*/
     height: 50%;
   }
 }
 
 .card-hello img.tapped {
-  /*customizable*/
   height: 50%;
 }
 @media (min-width: 100px) and (max-width: 575px) {
