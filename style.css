@@ -18,6 +18,8 @@
  border: none;
 }
 
+
+
 body {
   background-color: #90AEAD;
 
@@ -240,11 +242,19 @@ i:hover {
   .cards {
     grid-template-columns: 1fr;
   }
+
+  .video {
+    width: 100%;
+  }
 }
 
 @media (min-width: 576px) {
   .cards {
     grid-template-columns: 1fr;
+  }
+
+  .video {
+    width: 100%;
   }
 }
 
@@ -253,6 +263,10 @@ i:hover {
   .cards {
     grid-template-columns: 1fr 1fr;
   }
+
+  .video {
+    width: 100%;
+  }
 }
 
 
@@ -260,12 +274,19 @@ i:hover {
   .cards {
     grid-template-columns: 1fr 1fr 1fr;
   }
+  .video {
+    width: 560px;
+  }
 }
 
 
 @media (min-width: 1200px) {
   .cards {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .video {
+    width: 560px;
   }
 }
 
