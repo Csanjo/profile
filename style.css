@@ -13,7 +13,7 @@
 
 }
 
-.lang_btn {
+#langToggle {
  background: none;
  border: none;
  padding: 0px;
@@ -245,6 +245,10 @@ i:hover {
 
   .video {
     width: 100%;
+  }
+
+  .lang_btn {
+    width: 110%;
   }
 }
 
