@@ -40,7 +40,7 @@ let isEnglish = true;
             if ($(this).prop('checked')) {
                 $('#heading').text("Christian Sanjo");
                 $('#about').text("About me")
-                $('#paragraph').text("I live in Japan and recently completed a web programming course 💻, diving into the exciting world of coding and development. When I’m not building websites or learning new tech skills, you’ll likely find me exploring the vibrant food scene 🍣🍜, trying out new and unique dishes. In my downtime, I’m passionate about board games 🎲, it’s my favorite way to unwind and connect. I’m always eager to learn, create, and share experiences. Let’s connect! 🤝");
+                $('#paragraph').text("I live in Japan and recently completed a web programming course 💻. When I’m not building websites or learning new tech skills, you’ll likely find me exploring the vibrant food scene 🍣🍜, trying out new and unique dishes. In my downtime, I love playing boardgames 🎲, reading manga 📚, or singing at karaoke 🎤. I’m always eager to learn, create, and share experiences. Let’s connect! 🤝");
                 $('#projects').text("Projects")
                 $('#biteoff-des').text("An app that helps you find local deals in your area")
                 $('#boardgame-des').text("An app that allows you to rent boardgames")
@@ -52,7 +52,7 @@ let isEnglish = true;
             } else {
                 $('#heading').text("三條 クリスチアン");
                 $('#about').text("自己紹介")
-                $('#paragraph').text("私は日本に住んでおり、最近ウェブプログラミングのコースを修了しました💻。コーディングと開発の刺激的な世界に飛び込んでいます！ウェブサイトを作ったり、新しい技術を学んだりしていないときは、活気あるフードシーンを探索しながら🍣🍜、新しくユニークな料理を試しています。また、ボードゲーム🎲が大好きで、リラックスしたり、人とつながったりするのに最高の方法だと思っています。常に学び、創造し、経験を共有することを楽しんでいます。ぜひつながりましょう！ 😊");
+                $('#paragraph').text("私は日本に住んでいて、最近ウェブプログラミングのコースを修了しました💻。ウェブサイトを作ったり、新しい技術スキルを学んだりしていないときは、活気あふれる食文化🍣🍜を探索して、新しいユニークな料理に挑戦していることでしょう。暇なときには、ボードゲーム🎲をしたり、マンガ📚を読んだり、カラオケ🎤で歌ったりするのが大好きです。私は常に学び、創造し、経験を共有することに意欲的です。ぜひつながりましょう！🤝");
                 $('#projects').text("プロジェクト")
                 $('#biteoff-des').text("割引をしているレストランを探すことが出来る")
                 $('#boardgame-des').text("簡単な操作でボードゲームのレンタル予約をすることが出来る")
