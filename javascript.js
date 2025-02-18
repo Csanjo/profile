@@ -40,15 +40,27 @@ let isEnglish = true;
             if ($(this).prop('checked')) {
                 $('#heading').text("Christian Sanjo");
                 $('#about').text("About me")
-                $('#paragraph').text("I live in Japan and recently completed a web programming course 💻, diving into the exciting world of coding and development. When I’m not building websites or learning new tech skills, you’ll likely find me exploring the vibrant food scene 🍣🍜, trying out new and unique dishes. In my downtime, I’m passionate about board games 🎲—whether it’s a strategic challenge or a light-hearted game night with friends, it’s my favorite way to unwind and connect. I’m always eager to learn, create, and share experiences. Let’s connect! 🤝");
+                $('#paragraph').text("I live in Japan and recently completed a web programming course 💻, diving into the exciting world of coding and development. When I’m not building websites or learning new tech skills, you’ll likely find me exploring the vibrant food scene 🍣🍜, trying out new and unique dishes. In my downtime, I’m passionate about board games 🎲, it’s my favorite way to unwind and connect. I’m always eager to learn, create, and share experiences. Let’s connect! 🤝");
                 $('#projects').text("Projects")
+                $('#biteoff-des').text("An app that helps you find local deals in your area")
+                $('#boardgame-des').text("An app that allows you to rent boardgames")
+                $('#twitter-des').text("Make tweets, follow users, and like tweets")
+                $('#landing-des').text("Created a landing page for coding classes")
+                $('#race-des').text("Simple racing using JavaScript")
                 $('#video').text("Video")
+                $('#video-description').text("My Demo Day after completing the LeWagon Web Development course showcasing BiteOff.")
             } else {
                 $('#heading').text("三條 クリスチアン");
                 $('#about').text("自己紹介")
-                $('#paragraph').text("これは簡単な言語切り替えボタンです。");
+                $('#paragraph').text("私は日本に住んでおり、最近ウェブプログラミングのコースを修了しました💻。コーディングと開発の刺激的な世界に飛び込んでいます！ウェブサイトを作ったり、新しい技術を学んだりしていないときは、活気あるフードシーンを探索しながら🍣🍜、新しくユニークな料理を試しています。また、ボードゲーム🎲が大好きで、リラックスしたり、人とつながったりするのに最高の方法だと思っています。常に学び、創造し、経験を共有することを楽しんでいます。ぜひつながりましょう！ 😊");
                 $('#projects').text("プロジェクト")
+                $('#biteoff-des').text("割引をしているレストランを探すことが出来る")
+                $('#boardgame-des').text("簡単な操作でボードゲームのレンタル予約をすることが出来る")
+                $('#twitter-des').text("ツイートやユーザーのフォロー、いいねをすることが出来る")
+                $('#landing-des').text("ホームページのサンプル")
+                $('#race-des').text("主にJavaScriptを使用したシンプルなレーシングゲーム")
                 $('#video').text("ビデオ")
+                $('#video-description').text("LeWagon Web Development コースを修了した際に行った発表の動画です。BiteOffでご覧いただけます。")
             }
         });
     });
