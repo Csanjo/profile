@@ -64,3 +64,16 @@ let isEnglish = true;
             }
         });
     });
+
+
+    window.addEventListener("load", function() {
+      let toggle = document.getElementById("langToggle");
+
+      if (window.innerWidth <= 768) {
+          toggle.setAttribute("data-on", "ENG");
+          toggle.setAttribute("data-off", "JP");
+      } else {
+          toggle.setAttribute("data-on", "English");
+          toggle.setAttribute("data-off", "日本語");
+      }
+  });
