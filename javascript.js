@@ -67,13 +67,13 @@ let isEnglish = true;
 
 
     window.addEventListener("load", function() {
-      let toggle = document.getElementById("langToggle");
+      let toggle = $("#langToggle");
 
       if (window.innerWidth <= 768) {
-          toggle.setAttribute("data-on", "ENG");
-          toggle.setAttribute("data-off", "JP");
+          toggle.attr("data-on", "ENG").attr("data-off", "JP");
       } else {
-          toggle.setAttribute("data-on", "English");
-          toggle.setAttribute("data-off", "日本語");
+          toggle.attr("data-on", "English").attr("data-off", "日本語");
       }
+
+      toggle.bootstrapToggle("destroy").bootstrapToggle();
   });
