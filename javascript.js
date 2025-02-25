@@ -40,7 +40,7 @@ let isEnglish = true;
             if ($(this).prop('checked')) {
                 $('#heading').text("Christian Sanjo");
                 $('#about').text("About me")
-                $('#paragraph').text("I live in Japan and recently completed a web programming course 💻. When I’m not building websites or learning new tech skills, you’ll likely find me exploring the vibrant food scene 🍣🍜, trying out new and unique dishes. In my downtime, I love playing boardgames 🎲, reading manga 📚, or singing at karaoke 🎤. I’m always eager to learn, create, and share experiences. Let’s connect! 🤝");
+                $('#paragraph').text("I live in Japan and recently completed a web programming course 💻. When I’m not building websites or learning new tech skills, I will likely being trying out new and unique food 🍣🍜.downtime, I love playing boardgames 🎲, reading manga 📚, or singing at karaoke 🎤.I’m always eager to learn, create, and share experiences. Let’s connect! 🤝");
                 $('#projects').text("Projects")
                 $('#biteoff-des').text("An app that helps you find local deals in your area")
                 $('#boardgame-des').text("An app that allows you to rent boardgames")
