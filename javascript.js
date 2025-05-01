@@ -38,9 +38,9 @@ let isEnglish = true;
       $(document).ready(function () {
         $('#langToggle').change(function () {
             if ($(this).prop('checked')) {
-                $('#heading').text("Christian Sanjo");
+                $('#heading').text("Hello!");
                 $('#about').text("About me")
-                $('#paragraph').text("I live in Japan and recently completed a web programming course 💻. When I’m not building websites or learning new tech skills, I will likely being trying out new and unique food 🍣🍜.downtime, I love playing boardgames 🎲, reading manga 📚, or singing at karaoke 🎤.I’m always eager to learn, create, and share experiences. Let’s connect! 🤝");
+                $('#paragraph').text("I live in Japan and recently completed a web programming course 💻. When I’m not building websites or learning new tech skills, I will likely being trying out new and unique food 🍣🍜. I love playing boardgames 🎲, reading manga 📚, or singing at karaoke 🎤.I’m always eager to learn, create, and share experiences. Let’s connect! 🤝");
                 $('#projects').text("Projects")
                 $('#biteoff-des').text("An app that helps you find local deals in your area")
                 $('#boardgame-des').text("An app that allows you to rent boardgames")
@@ -49,8 +49,9 @@ let isEnglish = true;
                 $('#race-des').text("Simple racing using JavaScript")
                 $('#video').text("Video")
                 $('#video-description').text("My Demo Day after completing the LeWagon Web Development course showcasing BiteOff.")
+
             } else {
-                $('#heading').text("三條 クリスチアン");
+                $('#heading').text("こんにちは！");
                 $('#about').text("自己紹介")
                 $('#paragraph').text("私は日本に住んでいて、最近ウェブプログラミングのコースを修了しました💻。ウェブサイトを作ったり、新しい技術スキルを学んだりしていないときは、活気あふれる食文化🍣🍜を探索して、新しいユニークな料理に挑戦していることでしょう。暇なときには、ボードゲーム🎲をしたり、マンガ📚を読んだり、カラオケ🎤で歌ったりするのが大好きです。私は常に学び、創造し、経験を共有することに意欲的です。ぜひつながりましょう！🤝");
                 $('#projects').text("プロジェクト")
@@ -65,15 +66,58 @@ let isEnglish = true;
         });
     });
 
+    let typed;
 
-    window.addEventListener("load", function() {
-      let toggle = $("#langToggle");
+    function initTypedText(stringsArray) {
+        if (typed) typed.destroy();
+        typed = new Typed(".type-text", {
+            strings: stringsArray,
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+        });
+    }
 
-      if (window.innerWidth <= 768) {
-          toggle.attr("data-on", "ENG").attr("data-off", "JP");
+
+$(document).ready(function () {
+
+  let isEnglish = $("#langToggle").prop("checked");
+  initTypedText(isEnglish ? ["Christian Sanjo!"] : ["三條クリスチアン！"]);
+
+
+  $("#langToggle").change(function () {
+      let isEnglish = $(this).prop("checked");
+      if (isEnglish) {
+          initTypedText(["Christian Sanjo!"]);
       } else {
-          toggle.attr("data-on", "English").attr("data-off", "日本語");
+          initTypedText(["三條クリスチアン！"]);
       }
-
-      toggle.bootstrapToggle("destroy").bootstrapToggle();
   });
+});
+
+
+window.addEventListener("load", function() {
+  let toggle = $("#langToggle");
+
+  if (window.innerWidth <= 768) {
+      toggle.attr("data-on", "ENG").attr("data-off", "JP");
+  } else {
+      toggle.attr("data-on", "English").attr("data-off", "日本語");
+  }
+
+  toggle.bootstrapToggle("destroy").bootstrapToggle();
+});
+
+const observer = new IntersectionObserver ((entries) => {
+    entries.forEach((entry)=>{
+        console.log(entry)
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        } else {
+          entry.target.classList.remove("show");
+        }
+    });
+});
+
+const hiddenElements = document.querySelectorAll(".hidden");
+hiddenElements.forEach((el) => observer.observe(el));
