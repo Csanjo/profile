@@ -42,6 +42,7 @@ let isEnglish = true;
                 $('#about').text("About me")
                 $('#paragraph').text("I live in Japan and recently completed a web programming course 💻. When I’m not building websites or learning new tech skills, I will likely being trying out new and unique food 🍣🍜. I love playing boardgames 🎲, reading manga 📚, or singing at karaoke 🎤.I’m always eager to learn, create, and share experiences. Let’s connect! 🤝");
                 $('#projects').text("Projects")
+                $('#coinhunter-des').text("A game where you collect as many coins as you can")
                 $('#biteoff-des').text("An app that helps you find local deals in your area")
                 $('#boardgame-des').text("An app that allows you to rent boardgames")
                 $('#twitter-des').text("Make tweets, follow users, and like tweets")
@@ -55,6 +56,7 @@ let isEnglish = true;
                 $('#about').text("自己紹介")
                 $('#paragraph').text("私は日本に住んでいて、最近ウェブプログラミングのコースを修了しました💻。食べることが趣味で、ウェブサイトを作ったり、新しい技術スキルを学んだりしていないときは、SNSなどで見つけたユニークなご飯を食べに出かけています。暇なときには、ボードゲーム🎲をしたり、マンガ📚を読んだり、カラオケ🎤で歌ったりするのが大好きです。私は常に学び、創造し、経験を共有することに意欲的です。沢山の方と交流を深めたいと考えています。ご連絡をお待ちしております！🤝");
                 $('#projects').text("プロジェクト")
+                $('#coinhunter-des').text("できるだけ多くのコインを集めるゲーム")
                 $('#biteoff-des').text("割引をしているレストランを探すことが出来る")
                 $('#boardgame-des').text("簡単な操作でボードゲームのレンタル予約をすることが出来る")
                 $('#twitter-des').text("ツイートやユーザーのフォロー、いいねをすることが出来る")
@@ -74,7 +76,7 @@ let isEnglish = true;
             strings: stringsArray,
             typeSpeed: 150,
             backSpeed: 150,
-            loop: true
+            loop: false
         });
     }
 

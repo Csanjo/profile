@@ -3,9 +3,10 @@
 
 .hidden {
   opacity: 0;
-  filter: blue(5px);
+  filter: blur(5px);
   transform: translateX(-100%);
   transition: all 1s;
+  will-change: opacity, transform;
 }
 
 .show {
